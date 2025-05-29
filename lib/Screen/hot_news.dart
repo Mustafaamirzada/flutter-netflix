@@ -17,6 +17,7 @@ class _HotNewsState extends State<HotNews> {
   final ApiServices apiServices = ApiServices();
   late Future<TmdbTrending?> tmdbTrendingAPI;
 
+  @override
   void initState() {
     tmdbTrendingAPI = apiServices.tmdbTrending();
     super.initState();
